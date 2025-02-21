@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="N1style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+</head>
+<body>
+    <div id="header-container"></div>  <!-- This div will load the header.html content -->
+
+    <div id="toppart"></div>
+
+    <section class="about">
+        <div class="main">
+            <img src="images/IMG_1231 B.JPG" alt="Prabesh Poudel, owner of Hotel Tilicho">
+            <div class="about-text">
+                <h2>The Beginning</h2>
+                <p>Prabesh Poudel was the one who initially focused on technology and innovation. Instead of jumping straight into the hospitality 
+                    industry, he spent several years developing cutting-edge systems and software for businesses. After gaining substantial experience
+                    and a successful track record in tech, he returned to the resort venture with a fresh perspective. His expertise in technology played
+                    a crucial role in transforming Hotel Tilicho into a luxurious, world-renowned resort by integrating advanced management systems and creating 
+                    a top-notch guest experience.
+                </p>
+                <a href="index.html" class="read-more-btn">More</a>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 HOTEL TILICHO. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <!-- JavaScript to load header.html -->
+    <script>
+        $(document).ready(function() {
+            $("#toppart").load("header.html");
+        });
+    </script>
+</body>
+</html>
