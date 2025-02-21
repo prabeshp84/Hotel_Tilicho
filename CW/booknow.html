@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="bn.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="bn.js"></script>
+</head>
+<body>
+    <div class="booknow">
+        <div id="toppart"></div>
+        <div class="time-form">
+            <div class="time">
+                <h1>Opening Time</h1>
+                <br />
+                <h2>Monday-Friday</h2>
+                <h3>7am-11am (Breakfast)</h3>
+                <h3>11am-10pm (Lunch/Dinner)</h3>
+                <h2>Saturday and Sunday <br /></h2>
+                <h3>9am-1am (Breakfast)</h3>
+                <h3>1am-10pm (Lunch/Dinner)</h3>
+            </div>
+            <div class="booknow12">
+                <form class="book-form12" id="bookingForm" action="bn.php" method="post">
+                    <div class="form-item12">
+                        <label for="checkin-date">Check In Date:</label>
+                        <input type="date" id="checkin-date" name="checkin-date" required />
+                    </div>
+                    <div class="form-item12">
+                        <label for="checkout-date">Check Out Date:</label>
+                        <input type="date" id="checkout-date" name="checkout-date" required />
+                    </div>
+                    <div class="form-item12">
+                        <label for="adult">Adults:</label>
+                        <input type="number" min="1" value="1" id="adult" name="adult" required />
+                    </div>
+                    <div class="form-item12">
+                        <label for="children">Children:</label>
+                        <input type="number" min="0" value="0" id="children" name="children" />
+                    </div>
+                    <div class="form-item12">
+                        <label for="rooms">Rooms:</label>
+                        <input type="number" min="1" value="1" id="rooms" name="rooms" required />
+                    </div>
+                    <div class="form-item12">
+                        <label for="room-type">Room Type:</label>
+                        <select id="room-type" name="room-type" required>
+                            <option value="classic">Classic Tilicho Room</option>
+                            <option value="deluxe">Deluxe Tilicho Room</option>
+                            <option value="luxury">Luxury Tilicho Room</option>
+                        </select>
+                    </div>
+                    <div class="form-item12">
+                        <label for="username">Name:</label>
+                        <input type="text" id="username" name="username" required />
+                    </div>
+                    <div class="form-item12">
+                        <label for="contact">Contact:</label>
+                        <input type="text" id="contact" name="contact" required />
+                    </div>
+                    <div class="form-item12">
+                        <input type="submit" class="btnforbook" value="Book now" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 HOTEL TILICHO. All rights reserved.</p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $("#toppart").load("header.html");
+        });
+    </script>
+</body>
+</html>

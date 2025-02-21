@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food</title>
+    <link rel="stylesheet" href="AA.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="order.js"></script>
+</head>
+<body>
+    <div class="kitchen">
+        <div id="toppart"></div>
+        <div id="text">
+            <h1 align="center" style="font-size: 30px; color: white;">DININGS AND DRINKS</h1>
+        </div>
+    </div>
+
+    <!-- Thakali Cuisine -->
+    <div class="thakali item" id="common">
+        <img src="Aimage/thakali.jpg" height="200" width="270" />
+        <div class="text">
+            <h1>THAKALI CUISINE</h1>
+            <button type="button" class="btn2" onclick="openPopup(1)">
+                KNOW MORE
+            </button>
+            <button type="button" class="btn2" onclick="openOrderForm(1, 'Thakali Cuisine')">
+                ORDER NOW
+            </button>
+            <div class="popup" id="popup1">
+                <h2>More about Thakali</h2>
+                <p>It's really delicious. Thank you!</p>
+                <button class="closeBtn" type="button" onclick="closePopup(1)">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newari Cuisine -->
+    <div class="newari item" id="common">
+        <img src="Aimage/newari.jpg" height="200" width="270" />
+        <div class="text">
+            <h1>NEWARI CUISINE</h1>
+            <button type="button" class="btn2" onclick="openPopup(2)">
+                KNOW MORE
+            </button>
+            <button type="button" class="btn2" onclick="openOrderForm(2, 'Newari Cuisine')">
+                ORDER NOW
+            </button>
+            <div class="popup" id="popup2">
+                <h2>More about Newari</h2>
+                <p>It's really delicious. Thank you!</p>
+                <button class="closeBtn" type="button" onclick="closePopup(2)">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chinese Cuisine -->
+    <div class="chinese item" id="common">
+        <img src="Aimage/chinese.jpg" height="200" width="270" />
+        <div class="text">
+            <h1>CHINESE CUISINE</h1>
+            <button type="button" class="btn2" onclick="openPopup(3)">
+                KNOW MORE
+            </button>
+            <button type="button" class="btn2" onclick="openOrderForm(3, 'Chinese Cuisine')">
+                ORDER NOW
+            </button>
+            <div class="popup" id="popup3">
+                <h2>More about Chinese</h2>
+                <p>It's really delicious. Thank you!</p>
+                <button class="closeBtn" type="button" onclick="closePopup(3)">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Korean Cuisine -->
+    <div class="korean item" id="common">
+        <img src="Aimage/korean.jpg" height="200" width="270" />
+        <div class="text">
+            <h1>KOREAN CUISINE</h1>
+            <button type="button" class="btn2" onclick="openPopup(4)">
+                KNOW MORE
+            </button>
+            <button type="button" class="btn2" onclick="openOrderForm(4, 'Korean Cuisine')">
+                ORDER NOW
+            </button>
+            <div class="popup" id="popup4">
+                <h2>More about Korean</h2>
+                <p>It's really delicious. Thank you!</p>
+                <button class="closeBtn" type="button" onclick="closePopup(4)">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Indian Cuisine -->
+    <div class="indian item" id="common">
+        <img src="Aimage/indian.jpg" height="200" width="270" />
+        <div class="text">
+            <h1>INDIAN CUISINE</h1>
+            <button type="button" class="btn2" onclick="openPopup(5)">
+                KNOW MORE
+            </button>
+            <button type="button" class="btn2" onclick="openOrderForm(5, 'Indian Cuisine')">
+                ORDER NOW
+            </button>
+            <div class="popup" id="popup5">
+                <h2>More about Indian</h2>
+                <p>It's really delicious. Thank you!</p>
+                <button class="closeBtn" type="button" onclick="closePopup(5)">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fastfood Cuisine -->
+    <div class="fastfood item" id="common">
+        <img src="Aimage/fast.jpg" height="200" width="270" />
+        <div class="text">
+            <h1>FASTFOOD CUISINE</h1>
+            <button type="button" class="btn2" onclick="openPopup(6)">
+                KNOW MORE
+            </button>
+            <button type="button" class="btn2" onclick="openOrderForm(6, 'Fastfood Cuisine')">
+                ORDER NOW
+            </button>
+            <div class="popup" id="popup6">
+                <h2>More about Fastfood</h2>
+                <p>It's really delicious. Thank you!</p>
+                <button class="closeBtn" type="button" onclick="closePopup(6)">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wine -->
+    <div class="wine item" id="common">
+        <img src="Aimage/wine.jpg" height="200" width="270" />
+        <div class="text">
+            <h1>WINE</h1>
+            <button type="button" class="btn2" onclick="openPopup(7)">
+                KNOW MORE
+            </button>
+            <button type="button" class="btn2" onclick="openOrderForm(7, 'Wine')">
+                ORDER NOW
+            </button>
+            <div class="popup" id="popup7">
+                <h2>More about Wine</h2>
+                <p>It's really delicious. Thank you!</p>
+                <button class="closeBtn" type="button" onclick="closePopup(7)">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Soft Drinks -->
+    <div class="soft item" id="common">
+        <img src="Aimage/soft.jpg" height="200" width="270" />
+        <div class="text">
+            <h1>SOFT DRINKS</h1>
+            <button type="button" class="btn2" onclick="openPopup(8)">
+                KNOW MORE
+            </button>
+            <button type="button" class="btn2" onclick="openOrderForm(8, 'Soft Drinks')">
+                ORDER NOW
+            </button>
+            <div class="popup" id="popup8">
+                <h2>More about Soft Drinks</h2>
+                <p>It's really delicious. Thank you!</p>
+                <button class="closeBtn" type="button" onclick="closePopup(8)">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hot Drinks -->
+    <div class="hot item" id="common">
+        <img src="Aimage/hot.jpg" height="200" width="270" />
+        <div class="text">
+            <h1>HOT DRINKS</h1>
+            <button type="button" class="btn2" onclick="openPopup(9)">
+                KNOW MORE
+            </button>
+            <button type="button" class="btn2" onclick="openOrderForm(9, 'Hot Drinks')">
+                ORDER NOW
+            </button>
+            <div class="popup" id="popup9">
+                <h2>More about Hot Drinks</h2>
+                <p>It's really delicious. Thank you!</p>
+                <button class="closeBtn" type="button" onclick="closePopup(9)">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fruit Juice -->
+    <div class="fruit item" id="common">
+        <img src="Aimage/fruit.jpg" height="200" width="270" />
+        <div class="text">
+            <h1>FRUIT JUICE</h1>
+            <button type="button" class="btn2" onclick="openPopup(10)">
+                KNOW MORE
+            </button>
+            <button type="button" class="btn2" onclick="openOrderForm(10, 'Fruit Juice')">
+                ORDER NOW
+            </button>
+            <div class="popup" id="popup10">
+                <h2>More about Fruit Juice</h2>
+                <p>It's really delicious. Thank you!</p>
+                <button class="closeBtn" type="button" onclick="closePopup(10)">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Energy Drinks -->
+    <div class="energy item" id="common">
+        <img src="Aimage/energy.jpg" height="200" width="270" />
+        <div class="text">
+            <h1>ENERGY DRINKS</h1>
+            <button type="button" class="btn2" onclick="openPopup(11)">
+                KNOW MORE
+            </button>
+            <button type="button" class="btn2" onclick="openOrderForm(11, 'Energy Drinks')">
+                ORDER NOW
+            </button>
+            <div class="popup" id="popup11">
+                <h2>More about Energy Drinks</h2>
+                <p>It's really delicious. Thank you!</p>
+                <button class="closeBtn" type="button" onclick="closePopup(11)">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="order-form">
+      <form id="orderForm" action="order.php" method="post">
+          <input type="hidden" id="order-item-id" name="item_id">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+          <label for="customer-name">Name:</label>
+          <input type="text" id="customer-name" name="customer_name" required>
+          <label for="customer-email">Email:</label>
+          <input type="email" id="customer-email" name="customer_email" required>
+          <label for="customer-phone">Phone:</label>
+          <input type="text" id="customer-phone" name="customer_phone" required>
+          <button type="submit">Submit Order</button>
+      </form>
+  </div>
+
+  <script>
+      $(document).ready(function() {
+          $("#toppart").load("header.html");
+      });
+
+      function openPopup(id) {
+          let popup = document.getElementById("popup" + id);
+          popup.classList.add("open-popup");
+      }
+
+      function closePopup(id) {
+          let popup = document.getElementById("popup" + id);
+          popup.classList.remove("open-popup");
+      }
+
+      function openOrderForm(itemId, itemName) {
+          // Set the item ID in the hidden field
+          $("#order-item-id").val(itemId);
+
+          // Show the order form
+          $("#order-form").show();
+      }
+  </script>
+</body>
+</html>

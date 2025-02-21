@@ -1,0 +1,95 @@
+/* Background and general styling for the .booknow container */
+.booknow {
+  background: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.6)),
+    url(images/backofbn.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Flex container for side-by-side layout */
+.time-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Space between the two columns */
+}
+
+/* Styling for the time section */
+.time {
+  padding: 20px 40px;
+  border: 10px solid gold;
+  border-radius: 10px;
+  background-color: black;
+  color: rgb(255, 215, 0);
+  max-width: 45%; /* Adjust width as needed */
+  margin-top: 70px;
+}
+
+.time h1 {
+  color: rgb(255, 215, 0);
+}
+
+.time h2 {
+  color: goldenrod;
+}
+
+.time h3 {
+  color: #f8ede3;
+  padding: 10px 0;
+}
+
+/* Styling for the booking form section */
+.booknow12 {
+  padding: 20px 30px;
+  border: 10px solid gold;
+  background-color: rgba(1, 1, 1, 0.7);
+  color: gold;
+  max-width: 45%; /* Adjust width as needed */
+  margin-top: 70px;
+}
+
+.form-item12 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btnforbook {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btnforbook:hover {
+  background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Styling for the success message */
+.success-message {
+  text-align: center;
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.success-message h1 {
+  margin-top: 0;
+}
